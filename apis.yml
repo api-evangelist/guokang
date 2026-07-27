@@ -1,7 +1,26 @@
 aid: guokang
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/guokang.png
 name: guokang
-description: guokang is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Guokang (国康私人医生 / Guokang Private Doctor, 深圳市国康健康管理服务有限公司)
+  is a Shenzhen-based corporate and personal health-management service provider founded in 2005.
+  It positions itself as one of China's leading health-management companies, integrating more than
+  1,000 domestic and international medical resources — private physicians, specialist experts,
+  tertiary hospitals, and health-examination centers — to deliver private doctor services,
+  family medical-care programs, and corporate health services such as medical screening, employee
+  assistance programs (EAP), group insurance, and on-site corporate health centers. Surfaced as a
+  portfolio company of the Qiming venture network; no public developer portal or API surface was
+  found during enrichment (the site is served behind a Huawei Cloud WAF).
 url: https://raw.githubusercontent.com/api-evangelist/guokang/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Health Management
+- Corporate Wellness
+- Private Doctor
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/guokang-domain-security.yml
 - type: Website
   url: https://guokang.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
